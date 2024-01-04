@@ -12,13 +12,13 @@ pip install rdkit-pypi
 - Additionally, RDKit requires additional dependencies for visualization, so make sure your environment is properly set up.
 
 # Usage
-Open a Python environment in your terminal or command prompt.
+- Open a Python environment in your terminal or command prompt.
 
-Copy and paste the code to retrieve information about a compound named "caffeine" e.g.
+- Copy and paste the code to retrieve information about a compound named "caffeine" e.g.
 
-The script retrieves information such as molecular formula, molecular weight, IUPAC name, synonyms, and SMILES representation for the specified compound ("caffeine").
+- The script retrieves information such as molecular formula, molecular weight, IUPAC name, synonyms, and SMILES representation for the specified compound ("caffeine").
 
-Run the script, and the information about the compound will be displayed, including its molecular structure.
+- Run the script, and the information about the compound will be displayed, including its molecular structure.
 
 ```bash
 Molecular formula: C8H10N4O2
