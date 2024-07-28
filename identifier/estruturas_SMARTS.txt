@@ -1,0 +1,52 @@
+# Definições de padrões SMARTS para diferentes grupos funcionais
+functional_groups = {
+    'Álcool primário': '[#6][OH]',  # Grupo hidroxila ligado a um carbono sp3
+    'Aldeído': '[CH](=O)',  # Carbono duplamente ligado a oxigênio e ligado a um hidrogênio
+    'Cetona': '[#6]C(=O)[#6]',  # Carbono duplamente ligado a oxigênio e ligado a dois carbonos
+    'Ácido carboxílico': '[C](=O)[OH]',  # Carbono duplamente ligado a oxigênio e ligado a um grupo hidroxila
+    'Éster': 'C(=O)O',  # Carbono duplamente ligado a oxigênio e ligado a um oxigênio ligado a outro carbono
+    'Amina primária': '[NH2;!$(NC=O)]',  # Nitrogênio ligado a um carbono sp3 e dois hidrogênios
+    'Amina secundária': '[NH;!$(NC=O)]',  # Nitrogênio ligado a um carbono sp3 e um hidrogênio
+    'Amina terciária': '[N;!H;!$(NC=O)]',  # Nitrogênio ligado a três carbonos sp3
+    'Amida': '[NX3][CX3](=O)',  # Nitrogênio ligado a um carbono duplamente ligado a oxigênio
+    'Éter': '[#6]O[#6]',  # Oxigênio ligado a dois carbonos sp3
+    'Haleto de alquila': '[F,Cl,Br,I][CX4]',  # Halogênio ligado a um carbono sp3
+    'Anel aromático': 'a',  # Qualquer átomo em um anel aromático
+    'Fenol': 'c1ccccc1O[!C]',  # Anel aromático com hidroxila
+    'Anilina': 'c1ccccc1N',  # Anel aromático com grupo amino
+    'Tiol': '[SH]',  # Grupo tiol
+    'Alceno':'C=C',
+    'Alcino': 'C#C',  # Tripla ligação carbono-carbono
+    'Nitrilo': '[CX2]#N',  # Tripla ligação carbono-nitrogênio
+    'Imida': '[CX3](=O)[NX3](=O)',  # Grupo imida
+    'Nitro': '[NX3](=O)=O',  # Grupo nitro
+    'Sulfonamida': '[NX3][SX4](=O)(=O)',  # Grupo sulfonamida
+    'Sulfonato': '[SX4](=O)(=O)[O-]',  # Grupo sulfonato
+    'Tioéter': '[SX2][CX4]',  # Grupo tioéter
+    'Ácido Sulfônico': '[SX4](=O)(=O)[OX2H1]',  # Grupo ácido sulfônico
+    'Sulfoxida': '[#16X3](=[OX1])',  # Grupo sulfoxida
+    'Sulfona': '[#16X4](=[OX1])(=[OX1])',  # Grupo sulfona
+    'Peróxido': '[OX2][OX2]',  # Grupo peróxido
+    'Anidrido': '[CX3](=[OX1])[OX2][CX3](=[OX1])',  # Grupo anidrido
+    'Epóxido': '[CX4]1[OX2][CX4]1',  # Grupo epóxido
+    'Tioalcoxi': '[#16][OX2]',  # Grupo tioalcoxi
+    'Isocianato': '[NX2]=[CX2]=[OX1]',  # Grupo isocianato
+    'Isotiocianato': '[NX2]=[CX2]=[SX1]',  # Grupo isotiocianato
+    'Diazocomposto': '[NX2]=[NX2]',  # Grupo diazocomposto
+    'Azido': '[NX3][NX2]=[NX1]',  # Grupo azido
+    'Fosfina': '[PX3]',  # Grupo fosfina
+    'Fosfato': '[PX4](=O)(O)(O)(O)',  # Grupo fosfato
+    'Hidrato de Carbono': '[CX4][OX2H]',  # Hidrato de carbono (açúcar simples)
+    'Glicósido': '[CX4][OX2][CX4]',  # Grupo glicósido
+    'Enol': '[CX3]=[CX3][OX2H]',  # Grupo enol
+    'Enamina': '[CX3]=[CX3][NX3;H2,H1;!$(NC=O)]',  # Grupo enamina
+    'Azo': '[NX2]=[NX2]',  # Grupo azo
+    'Hidrazona': '[NX3]=[CX3]',  # Grupo hidrazona
+    'Hidroxilamina': '[NX3][OX2H]',  # Grupo hidroxilamina
+    'Oximas': '[CX3](=N[OX2H1])',  # Grupo oximas
+    'Isocianida': '[CX2]#[NX2]',  # Grupo isocianida
+    'Imidoéster': '[CX3](=N)[OX2]',  # Grupo imidoéster
+    'Carbamato': '[NX3][CX3](=O)[OX2]',  # Grupo carbamato
+    'Ureia': '[NX3][CX3](=O)[NX3]',  # Grupo ureia
+    'Guanidina': '[NX3][CX3](=N)[NX3]',  # Grupo guanidina 
+}
